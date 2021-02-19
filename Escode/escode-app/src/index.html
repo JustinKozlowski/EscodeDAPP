@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blind Bidding App</title>
+  <link href='https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,400italic,300italic,300|Raleway:300,400,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/toastr.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <div class="content">
+    <div class="container wow fadeInUp delay-03s">
+      <div class="row">      
+        <div class="logo text-center">
+		      <h1>Escode</h1>
+        </div>
+      </div>
+      
+      <div class="text-center" > <p><b>Current account: </b><span id="current_account"></span></p>
+      <div class="row text-center" style="padding-top:20px">
+        <div class="row center text-center">
+            <h3>Create Job</h3>
+
+            <form>
+                <div class="row">
+                    <label>Payment</label>
+                    <input id="job-value"></input>
+                </div>
+                <div class="row">
+                    <label>Job Description</label>
+                    <textarea name="paragraph_text" cols="50" rows="10" id="job-description"></textarea>
+                </div>
+                <div class="row">
+                    <label>Verifier</label>
+                    <input id="verifier"></input>
+                </div>
+                <div class="row">
+                    <label>Job Hash</label>
+                    <input id="job-hash"></input>
+                </div>
+                <div class="row">
+                    <button onclick="App.handleCreateJob()">Submit</button>
+                </div>             
+                
+                
+                
+            </form>
+        </div>
+        
+        <div class="row center text-left" id="jobs">
+
+        </div>
+
+      </div>
+  </div>
+  
+  <script src="js/dist/jquery.min.js"></script>
+  <script src="js/dist/bootstrap.min.js"></script>
+  <script src="js/dist/jquery.countdown.min.js"></script>
+  <script src="js/dist/wow.js"></script>
+  <script src="js/dist/custom.js"></script>
+  <script src="js/dist/bootstrap.min.js"></script>
+  <script src="js/dist/toastr.min.js"></script>
+  <script src="js/dist/web3.min.js"></script>
+  <script src="js/dist/truffle-contract.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
